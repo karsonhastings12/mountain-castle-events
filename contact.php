@@ -1,5 +1,4 @@
 <?php
-    $message_sent: false;
     if(isset($_POST['name']) && $_POST['name'] !='') {
         if(isset($_POST['phone']) && $_POST['phone'] !='') {
             if(isset($_POST['email']) && $_POST['email'] !='') {
@@ -20,28 +19,11 @@
                         $body .= "Message: : ".$message."\r\n";
 
                         mail($to,$subject,$body);
-
-                        $message_sent: true;
-                    }
-                    else{
-                        $invaild_message = "form.invalid"
                     }
                 }
-                else{
-                    $invaild_email = "form.invalid"
-                }
             }
-            else{
-                $invaild_email = "form.invalid"
-            }
-        }
-        else{
-            $invaild_phone = "form.invalid"
         }
     } 
-    else{
-        $invaild_name = "form.invalid"
-    }
 ?>
 
 <head>
@@ -70,10 +52,6 @@
 
     <h3> Thank you! We will contact you soon! <h3>
 
-    <?php
-    else:
-    ?>
-
     <section class="signup-section" id="signup">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5">
@@ -83,16 +61,16 @@
                         <form class="form-signup" id="contactForm" method="POST" action="contact.php">
                             <!-- Name and Phone input-->
                             <div class="row input-group-newsletter">
-                                <div class="col"><input class="form-control <?= $invaild_name ?? ?>" name="name" id="name" type="text" placeholder="Enter name..." aria-label="Enter name..." data-sb-validations="required,name"></div>
-                                <div class="col"><input class="form-control <?= $invaild_phone ?? ?>" name="phone" id="phone" type="tel" placeholder="(123) 555-5555" aria-label="(123) 555-5555" data-sb-validations="required,phone"></div>
+                                <div class="col"><input class="form-control" name="name" id="name" type="text" placeholder="Enter name..." aria-label="Enter name..." data-sb-validations="required,name"></div>
+                                <div class="col"><input class="form-control" name="phone" id="phone" type="tel" placeholder="(123) 555-5555" aria-label="(123) 555-5555" data-sb-validations="required,phone"></div>
                             </div><br>
                             <!-- Email address input-->
                             <div class="row input-group-newsletter">
-                                <div class="col"><input class="form-control <?= $invaild_email ?? ?>" name="emailAddress" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email"></div>
+                                <div class="col"><input class="form-control" name="emailAddress" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email"></div>
                             </div><br>
                             <!-- Message input-->
                             <div class="row input-group-newsletter">
-                                <div class="col"><textarea class="form-control <?= $invaild_message ?? ?>" name="message" id="message" placeholder="When and where..." aria-label="When and where..." data-sb-validations="required,message"></textarea></div>
+                                <div class="col"><textarea class="form-control" name="message" id="message" placeholder="When and where..." aria-label="When and where..." data-sb-validations="required,message"></textarea></div>
                                 <div class="col-auto"><input class="btn btn-primary" id="submitButton" type="submit" value="BOOK NOW!"></div>
                             </div>
                         </form>
@@ -100,8 +78,5 @@
                 </div>
             </div>
         </section>
-        <?php
-        endif
-        ?>
 </body>
 
