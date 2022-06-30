@@ -58,7 +58,7 @@
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
                         <h2 class="text-white mb-5">Book Now!</h2><br><br>
-                        <form class="form-signup" id="contactForm" method="POST" action="contact.php">
+                        <form class="form-signup" id="contactForm" method="POST" action="contact.php" data-netlify="true">
                             <!-- Name and Phone input-->
                             <div class="row input-group-newsletter">
                                 <div class="col"><input class="form-control" name="name" id="name" type="text" placeholder="Enter name..." aria-label="Enter name..." data-sb-validations="required,name"></div>
