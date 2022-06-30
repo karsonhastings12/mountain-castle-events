@@ -79,16 +79,16 @@
                         <form class="form-signup" name="booknow" id="contactForm" method="POST" action="contact.php" data-netlify="true">
                             <!-- Name and Phone input-->
                             <div class="row input-group-newsletter">
-                                <div class="col"><input class="form-control" name="name" id="name" type="text" placeholder="Enter name..."></div>
-                                <div class="col"><input class="form-control" name="phone" id="phone" type="tel" placeholder="(123) 555-5555"></div>
+                                <div class="col"><input class="form-control" name="name" id="name" type="text" placeholder="Enter name..." required></div>
+                                <div class="col"><input class="form-control" name="phone" id="phone" type="tel" placeholder="(123) 555-5555" required></div>
                             </div><br>
                             <!-- Email address input-->
                             <div class="row input-group-newsletter">
-                                <div class="col"><input class="form-control" name="emailAddress" id="emailAddress" type="email" placeholder="Enter email address..."></div>
+                                <div class="col"><input class="form-control" name="emailAddress" id="emailAddress" type="email" placeholder="Enter email address..." required></div>
                             </div><br>
                             <!-- Message input-->
                             <div class="row input-group-newsletter">
-                                <div class="col"><textarea class="form-control" name="message" id="message" placeholder="When and where..."></textarea></div>
+                                <div class="col"><textarea class="form-control" name="message" id="message" placeholder="When and where..." required></textarea></div>
                                 <div class="col-auto"><input class="btn btn-primary" id="submitButton" type="submit" value="BOOK NOW!"></div>
                             </div>
                         </form>
