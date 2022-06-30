@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--General
+    * Color of links (# 242)
+    * Color of links when cursor is over them (# 246)
+    * Navigation link colors (# 11519)-->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="title" content="Mountain Castle Events - Southeast Idaho" />
+        <meta name="description" content="Southeast Idaho's favorite modern bounce castle. Make your party memorable. Perfect for birthdays, weddings, and special events. Affordable prices. Call now to book a bounce castle."/>
+        <meta name="author" content="Presli Hastings"/>
+        <meta name="keywords" content="Bounce House, Bounce Castle, Party, Kids Activities, Weddings, Southeast Idaho, Cute Parties, Party Ideas, Rexburg" />
+        <title>Mountain Castle Events - Southeast Idaho Modern Bounce Castle</title>
+        <link rel="icon" type="image/x-icon" href="images/img/Themepic.png"/>
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/mystyles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <!--Nav Bar
+        * “Mountain castle events” font (# 11493)-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">Mountain Castle Events</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse navcolor" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#signup">Book Now</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#hours">Hours</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#aboutus">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <!--Masthead
+        * “Mountain castle events” color (# 11490)
+        * “Mountain castle Events” font (# 11574)
+        * “South East Idaho…” color (# 7962)
+        * Color and background of “get started” (# 3036 & 3037)
+        * Title on home page font (# 11574)
+        * -Masthead- background color (# 11567)-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase"><span class="multicolortext">Mountain Castle Events</span></h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Southeast Idaho's Favorite Modern Bounce Castle</h2>
+                        <a class="btn btn-primary" href="#signup">Get Started</a><br><br>
+                        <img class="img-fluid" src="images/img/logo.png" width="140" alt="Mountain Castle Events logo" />
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Signup-->
+        <!--Signup
+        * ‘Enter email address’ bar background color (# 2200)
+        * ‘Enter email address’ bar color when clicked on (# 2221)
+        * Background color (# 11649)-->
+        <section class="signup-section" id="signup">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                        <h2 class="text-white mb-5">Book Now!</h2><br><br>
+                        <form class="form-signup" id="contactForm" method="post" action="contact.php">
+                            <!-- Name and Phone input-->
+                            <div class="row input-group-newsletter">
+                                <div class="col"><input class="form-control" id="name" type="text" placeholder="Enter name..." aria-label="Enter name..." data-sb-validations="required,name"></div>
+                                <div class="col"><input class="form-control" id="phone" type="tel" placeholder="(123) 555-5555" aria-label="(123) 555-5555" data-sb-validations="required,phone"></div>
+                            </div><br>
+                            <!-- Email address input-->
+                            <div class="row input-group-newsletter">
+                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email"></div>
+                            </div><br>
+                            <!-- Message input-->
+                            <div class="row input-group-newsletter">
+                                <div class="col"><textarea class="form-control" id="message" placeholder="When and where..." aria-label="When and where..." data-sb-validations="required,message"></textarea></div>
+                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Book Now!</button></div>
+                            </div>
+                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
+                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
+                            <div class="invalid-feedback mt-2" data-sb-feedback="name:required">A name is required.</div>
+                            <div class="invalid-feedback mt-2" data-sb-feedback="phone:required">A phone number is required.</div>
+                            <div class="invalid-feedback mt-2" data-sb-feedback="phone:phone">Phone is not valid.</div>
+                            <div class="invalid-feedback mt-2" data-sb-feedback="message:required">A message is required.</div>
+                            <!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted-->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3 mt-2 text-white">
+                                    <div class="fw-bolder">Booking successful!</div>
+                                </div>
+                            </div>
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About-->
+        <!--About
+        * Background color in about section (# 11613)
+        * -About- H2 color
+        * Paragraph width (# 1404)
+        * Spacing between paragraphs (# 11617) -->
+        <section class="about-section text-center" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-7">
+                        <h2 class="text-white mb-4">What is Mountain Castle Events?</h2>
+                        <h5 class="text-white-50">Mountain Castle Events brings new life to the classic bounce house. Our modern bouncers are perfect for every occasion, every age, and every theme. We can't wait to party with you!</h5>
+                    </div>
+                </div><br>
+                <img class="img-fluid border" src="images/img/Castle-1.jpg" width="600" alt="Bounce Castle"/><br><br>
+                <img class="img-fluid" src="images/img/Themepic.png" width="100" alt="Mountain Castle Events logo" />
+            </div>
+        </section>
+        <!-- Pricing-->
+        <!--Pricing 
+        * Box colors (# 8034)-->
+        <section class="project-section bg-light" id="pricing">
+            <div class="container px-4 px-lg-5">
+                <!-- Pricing One Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="images/img/Castle-15.jpg" alt="Bounce House Castle" /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-white text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Prices</h4>
+                                    <p class="mb-0 text-white-50">$175 - 4 hours<br>$225 per day<br><br>Free delivery within 15 miles of Rexburg </p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pricing Two Row-->
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="images/img/Castle-18.jpg" alt="Kids in Bounce Castle" /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-white text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Special Events</h4>
+                                    <div class="mb-0 text-white-50 row1">
+                                        <div class="column1">
+                                          <p>Birthdays<br>Weddings<br>Business Parties</p>
+                                        </div>
+                                        <div class="column1">
+                                          <p>Graduations<br>Showers<br>Just for fun!</p>
+                                        </div>
+                                      </div>
+                                    <hr class="d-none d-lg-block mb-0 me-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <!-- Hours-->
+        <!--Hours
+        * Box colors (# 8034)-->
+        <section class="project-section bg-light" id="hours">
+            <div class="container px-4 px-lg-5"> 
+                <!-- Hours One Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="images/img/Castle-23.jpg" alt="Kid in Bounce Castle" /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-white text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Hours</h4>
+                                    <p class="mb-0 text-white-50">Monday - Saturday<br></p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><br>
+                <!-- FAQ Row-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center" id="faq">
+                    <div class="col-xl-8 col-lg-7">
+                        <img class="img-fluid mb-3 mb-lg-0" src="images/img/Castle-43.jpg" alt="Kids in Bounce Castle"/>
+                    </div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h3 class="text-black-50 mb-0">Frequently Asked Questions</h3><br>
+                        </div>
+                        <ul class="featured-text text-lg-left text-white-50">
+                            <li>Will the bouncer be clean?
+                                <ul>
+                                    <li>Spotless! We wash, sanitize, and dry after each rental</li>
+                                </ul>
+                            </li><br>
+                            <li>What surfaces do you set up on?
+                                <ul>
+                                    <li>Grass, turf, concrete, pavers, asphalt, or indoors. NEVER on gravel or dirt</li>
+                                </ul>
+                            </li><br>
+                            <li>Do you require a deposit?
+                                <ul>
+                                    <li>We require a $50 non-refundable deposit that goes toward the price of your rental to book.</li>
+                                </ul>
+                            </li><br>
+                            <li>How far do you travel?
+                                <ul>
+                                    <li>We deliver anywhere in SE Idaho. Please message us if you are curious about a specific location!</li>
+                                </ul>
+                            </li><br>
+                            <li>What form of payment do you accept?
+                                <ul>
+                                    <li>We accept debit and credit cards, as well as cash and Venmo. If paying in cash, please have the exact amount ready.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section><br>
+        <!-- About Presli-->
+        <section class="about-section text-center" id="aboutus">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">About Us!</h2>
+                        <h5 class="text-white-50">Hi! I’m Presli Hastings, thank you so much for being here! My husband Brady and I were both born and raised in Southeast Idaho and we LOVE living here with our three kids.<br><br>About a year ago, I noticed a huge hole in the market for cute bounce houses. I decided to bring high-quality, beautiful inflatables to this area and Mountain Castle Events was born. We are fully licensed and insured and ready to party with you! We can’t wait to get to know you!</h5><br>
+                    </div>
+                </div>
+                <img class="img-fluid border" src="images/img/Castle-60.jpg" width="200" alt="Bounce Castle"/><br><br>
+            </div>
+        </section>
+        <!-- Contact-->
+        <!--Contact
+        * “Address, e-mail, phone” at bottom of page color (# 67)
+        * Social Media Buttons (# 11691)
+        * Background color (# 8029)-->
+        <section class="contact-section bg-black" id="contact">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Location</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-white-50">Southeast Idaho</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50"><a href="mailto:mountaincastleevents@gmail.com">mountaincastleevents@gmail.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-white-50">+1 (208) 313-7381</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" target="_blank" href="https://www.instagram.com/mountaincastle.events/"><i class="fab fa-instagram"></i></a>
+                    <a class="mx-2" target="_blank" href="https://www.facebook.com/mountaincastle.events"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; 2022 Mountain Castle Events. All Rights Reserved.</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
