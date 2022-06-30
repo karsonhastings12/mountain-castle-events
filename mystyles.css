@@ -22,3 +22,8 @@
     content: "";
     display:contents;
     clear: both;}
+
+  li {padding-bottom: 5px;}
+
+  .form_invalid {
+    outline: 2px solid red !important;}
